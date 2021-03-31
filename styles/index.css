@@ -15,8 +15,7 @@ html{
      height: 100%;
   }
   
-  
-  .bg-post{
+   .bg-post{
    display: flex;
    height: 100vh;
    justify-content: center;
