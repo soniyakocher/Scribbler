@@ -73,17 +73,14 @@ function countLikes() {
 
 const comments = [];
 
-//Function for adding Comment to a particular posy
+//Function for adding and display Comments to a particular post as list
 function addingComment(item, index) {
     const temp = document.getElementById('comments').innerHTML;
     document.getElementById('comments').innerHTML = `<div class="comment">${item}</div>`;
-    // + `</br>`;
+     + `</br>`;
     document.getElementById('comments').innerHTML += `${temp}</br>`;
     comments.pop();
 }
-
-
-//Function to display comment
 function addComment(comment) {
     if (comment.value !== '') {
         document.getElementById('comments').style.visibility = 'visible';
